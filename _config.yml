@@ -1,0 +1,7 @@
+title: skins viewer
+baseurl: ""
+url: ""
+
+# include the skins folder as static files
+include:
+  - skins

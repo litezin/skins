@@ -1,0 +1,14 @@
+---
+layout: default
+title: Upload Skin
+---
+
+<h1>Upload de skin</h1>
+
+<form action="https://krizsmp.site/upload" method="post" enctype="multipart/form-data">
+  <label for="file">Arquivo PNG 32x32:</label>
+  <input type="file" name="skin" id="file" accept="image/png" required>
+  <button type="submit">Enviar</button>
+</form>
+<!-- envia diretamente para o serviço externo; este repositório não processa
+    o upload --> 
