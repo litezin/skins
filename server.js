@@ -147,7 +147,7 @@ async function handleMirror(req, res, config) {
     const { buffer, contentType } = await downloadImage(sourceUrl);
     const filename = await saveSkinImage(playerUuid, buffer, contentType);
 
-    const baseUrl = process.env.PUBLIC_URL || `https://litezin.github.io/skins/`;
+    const baseUrl = process.env.PUBLIC_URL || `https://skins-jrkd.onrender.com/`;
     const publicUrl = `${baseUrl}/skins/${filename}`;
 
     console.log(`[mirror] uuid=${playerUuid} -> ${publicUrl}`);
