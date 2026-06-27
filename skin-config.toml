@@ -1,0 +1,19 @@
+["Somake Skin Config"]
+# Endpoint HTTP(S) da API externa responsável por espelhar a skin e devolver uma URL estável.
+# Payload enviado: {"playerUuid":"...","sourceUrl":"..."}
+# Resposta esperada: {"publicUrl":"https://..."} ou {"url":"https://..."}
+apiEndpoint = ""
+# Nome do header de autenticação enviado para a API. Ex.: Authorization ou X-API-Key.
+# Deixe vazio para não enviar header de autenticação.
+apiAuthHeader = ""
+# Valor do header de autenticação. Ex.: Bearer meu-token ou a própria chave da API.
+# Deixe vazio para não enviar autenticação.
+apiAuthValue = ""
+# Timeout de conexão com a API externa em milissegundos
+# Default: 5000
+# Range: 1000 ~ 60000
+apiConnectTimeoutMs = 5000
+# Timeout de leitura da API externa em milissegundos
+# Default: 10000
+# Range: 1000 ~ 60000
+apiReadTimeoutMs = 10000
